@@ -82,12 +82,14 @@ class _HomeState extends State<Home> {
                     decoration: InputDecoration(
                         hintStyle: const TextStyle(fontSize: 18),
                         prefix: CountryCodePicker(
-                            barrierColor:
-                                theme == false ? Colors.white : Colors.black45,
-                            backgroundColor:
-                                theme == false ? Colors.white : Colors.black45,
+                            dialogTextStyle: TextStyle(color: Colors.white),
+                            closeIcon:
+                                const Icon(Icons.close, color: Colors.white),
+                            searchDecoration: const InputDecoration(
+                                prefixIconColor: Colors.white),
+                            barrierColor: Colors.transparent,
                             dialogBackgroundColor:
-                                theme == false ? Colors.white : Colors.black45,
+                                const Color.fromARGB(255, 32, 31, 31),
                             flagWidth: 20,
                             textStyle: const TextStyle(fontSize: 18),
                             initialSelection: 'EG',
